@@ -1,0 +1,242 @@
+{
+  "orders": [
+    {
+      "id": "GO-AF39FBE3",
+      "key": "aa492828-3760-43db-b9d6-b190c0e5a54e",
+      "owner": "demo-student",
+      "input": {
+        "title": "Kitchen starter box",
+        "category": "Kitchenware",
+        "value": 50,
+        "pickup": "2027-06-20",
+        "delivery": "2027-09-01",
+        "units": 1,
+        "matched": true
+      },
+      "quote": {
+        "ruleVersion": "demo-1",
+        "days": 73,
+        "units": 1,
+        "charges": {
+          "collection": 8,
+          "storage": 25.55,
+          "delivery": 8,
+          "commission": 2.5
+        },
+        "total": 44.05,
+        "sellerProceeds": 47.5,
+        "fulfilmentPayer": "Buyer (demo assumption)",
+        "commissionPayer": "Seller",
+        "capacityAvailable": true,
+        "peakUnits": 1,
+        "capacity": 12,
+        "reviewRequired": false,
+        "reason": "Within pilot rules",
+        "billing": "Minimum 1 storage day; date difference thereafter. Reservation includes both handover dates.",
+        "settlement": "After buyer receipt and manual dispute review. No real payment is processed."
+      },
+      "status": "delivered",
+      "settlement": "recorded_demo",
+      "events": [
+        {
+          "at": "2026-10-31T10:36:28.710Z",
+          "actor": "demo-student",
+          "status": "pending",
+          "note": "Request created; quote snapshot saved. Manual confirmation required."
+        },
+        {
+          "at": "2026-10-31T10:37:09.084Z",
+          "actor": "demo-operator",
+          "status": "confirmed",
+          "note": "TEST: simulated handover"
+        },
+        {
+          "at": "2026-10-31T10:37:09.085Z",
+          "actor": "demo-operator",
+          "status": "collected",
+          "note": "TEST: simulated handover"
+        },
+        {
+          "at": "2026-10-31T10:37:09.087Z",
+          "actor": "demo-operator",
+          "status": "stored",
+          "note": "TEST: simulated handover"
+        },
+        {
+          "at": "2026-10-31T10:37:09.088Z",
+          "actor": "demo-operator",
+          "status": "dispatched",
+          "note": "TEST: simulated handover"
+        },
+        {
+          "at": "2026-10-31T10:37:09.089Z",
+          "actor": "demo-operator",
+          "status": "delivered",
+          "note": "TEST: simulated handover"
+        },
+        {
+          "at": "2026-10-31T10:37:09.091Z",
+          "actor": "demo-operator",
+          "status": "settlement",
+          "note": "SIMULATION ONLY: TEST: simulated review"
+        }
+      ]
+    },
+    {
+      "id": "GO-4D6613C8",
+      "key": "d9becb9c-680b-4933-93a7-e05c5f9cf8ef",
+      "owner": "demo-student",
+      "input": {
+        "title": "Kitchen starter box",
+        "category": "Kitchenware",
+        "value": 50,
+        "pickup": "2027-06-20",
+        "delivery": "2027-09-01",
+        "units": 1,
+        "matched": true,
+        "forecastMonth": 1
+      },
+      "quote": {
+        "charges": {
+          "collection": 8.07,
+          "storage": 9.04,
+          "delivery": 8.07,
+          "commission": 2.5
+        },
+        "total": 27.68,
+        "sellerProceeds": 47.5,
+        "logistics": 25.18,
+        "buyerPayment": 75.18,
+        "sellerPayment": 2.5,
+        "sellerPayout": 50,
+        "fulfilmentPayer": "Buyer (explicit demo allocation; workbook specifies users only)",
+        "commissionPayer": "Seller, separate collection",
+        "financial": {
+          "month": 1,
+          "label": "Jun Y1",
+          "forecastOrders": 50,
+          "pallets": 12,
+          "storageWeeks": 10.428571428571429,
+          "planningWeeks": 6,
+          "weightedCourierPerLeg": 8.0682,
+          "monthlyStoragePerOrder": 5.203572,
+          "rawCharges": {
+            "collection": 8.0682,
+            "storage": 9.044303714285714,
+            "delivery": 8.0682,
+            "commission": 2.5
+          },
+          "platformCosts": {
+            "packaging": 0.4166666666666667,
+            "paymentProcessing": 0.46608000000000005,
+            "sellerPayout": 0,
+            "handling": 1,
+            "claims": 0.25
+          },
+          "contribution": 0.3672533333333332,
+          "rounding": "Round charge lines to pennies, then sum. Workbook forecast retains full precision.",
+          "allocation": "One unit = one parcel and one storage lot; multi-unit scaling is an explicit prototype assumption.",
+          "source": "UKGoose_Dynamic_Financial_Model_Revised.xlsx"
+        },
+        "ruleVersion": "financial-v2",
+        "days": 73,
+        "units": 1,
+        "capacityAvailable": true,
+        "peakUnits": 1,
+        "capacity": 12,
+        "reviewRequired": false,
+        "reason": "Within pilot rules",
+        "billing": "Storage uses the selected forecast month and whole-pallet allocation; actual dates scale the six-week planning duration. This is an estimate, not a carrier quote.",
+        "settlement": "Seller service fee is collected separately; buyer pays goods value and allocated logistics in this demo. No real payments."
+      },
+      "status": "pending",
+      "settlement": "not_due",
+      "events": [
+        {
+          "at": "2026-11-01T09:33:05.341Z",
+          "actor": "demo-student",
+          "status": "pending",
+          "note": "Request created; quote snapshot saved. Manual confirmation required."
+        }
+      ]
+    },
+    {
+      "id": "GO-B5D5D1F5",
+      "key": "1793532487790-0.623558038064252",
+      "owner": "demo-student",
+      "input": {
+        "title": "Kitchen starter box",
+        "category": "Study essentials",
+        "value": 50,
+        "units": 1,
+        "pickup": "2027-06-20",
+        "delivery": "2027-09-01",
+        "matched": true,
+        "forecastMonth": 1
+      },
+      "quote": {
+        "charges": {
+          "collection": 8.07,
+          "storage": 9.04,
+          "delivery": 8.07,
+          "commission": 2.5
+        },
+        "total": 27.68,
+        "sellerProceeds": 47.5,
+        "logistics": 25.18,
+        "buyerPayment": 75.18,
+        "sellerPayment": 2.5,
+        "sellerPayout": 50,
+        "fulfilmentPayer": "Buyer (explicit demo allocation; workbook specifies users only)",
+        "commissionPayer": "Seller, separate collection",
+        "financial": {
+          "month": 1,
+          "label": "Jun Y1",
+          "forecastOrders": 50,
+          "pallets": 12,
+          "storageWeeks": 10.428571428571429,
+          "planningWeeks": 6,
+          "weightedCourierPerLeg": 8.0682,
+          "monthlyStoragePerOrder": 5.203572,
+          "rawCharges": {
+            "collection": 8.0682,
+            "storage": 9.044303714285714,
+            "delivery": 8.0682,
+            "commission": 2.5
+          },
+          "platformCosts": {
+            "packaging": 0.4166666666666667,
+            "paymentProcessing": 0.46608000000000005,
+            "sellerPayout": 0,
+            "handling": 1,
+            "claims": 0.25
+          },
+          "contribution": 0.3672533333333332,
+          "rounding": "Round charge lines to pennies, then sum. Workbook forecast retains full precision.",
+          "allocation": "One unit = one parcel and one storage lot; multi-unit scaling is an explicit prototype assumption.",
+          "source": "UKGoose_Dynamic_Financial_Model_Revised.xlsx"
+        },
+        "ruleVersion": "financial-v2",
+        "days": 73,
+        "units": 1,
+        "capacityAvailable": true,
+        "peakUnits": 2,
+        "capacity": 12,
+        "reviewRequired": false,
+        "reason": "Within pilot rules",
+        "billing": "Storage uses the selected forecast month and whole-pallet allocation; actual dates scale the six-week planning duration. This is an estimate, not a carrier quote.",
+        "settlement": "Seller service fee is collected separately; buyer pays goods value and allocated logistics in this demo. No real payments."
+      },
+      "status": "pending",
+      "settlement": "not_due",
+      "events": [
+        {
+          "at": "2026-11-01T11:28:07.811Z",
+          "actor": "demo-student",
+          "status": "pending",
+          "note": "Request created; quote snapshot saved. Manual confirmation required."
+        }
+      ]
+    }
+  ]
+}

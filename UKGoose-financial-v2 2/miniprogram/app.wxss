@@ -1,0 +1,1 @@
+page{background:#f8f5e9;color:#263d31;font-family:Arial,sans-serif}button::after{border:0}button{font-size:26rpx;border-radius:40rpx;background:#f5cf37;color:#263d31;margin:18rpx 0}input,picker{background:#f6f6ec;padding:22rpx;border-radius:16rpx;margin:12rpx 0 24rpx}text{line-height:1.6}

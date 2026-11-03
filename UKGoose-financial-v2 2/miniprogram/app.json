@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "UKGoose",
+    "navigationBarBackgroundColor": "#f8f5e9",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f8f5e9"
+  }
+}
